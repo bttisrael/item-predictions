@@ -1,6 +1,6 @@
 # Retail-Demand-Forecasting: An End-to-End Predict-then-Optimize Pipeline
+<img width="1615" height="684" alt="image" src="https://github.com/user-attachments/assets/cfa81f7f-0883-415b-83bb-55576696407a" />
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 ## Introduction
