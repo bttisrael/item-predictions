@@ -1,4 +1,4 @@
-# Item-Predictions: Pipeline built to predict item sales by store 
+# Item Demand Predictions: An Predict sales by item, store and day Pipeline
 
 <img width="100%" alt="Dashboard Preview" src="https://github.com/user-attachments/assets/cfa81f7f-0883-415b-83bb-55576696407a" />
 
@@ -29,17 +29,19 @@ Clone and install from this repository. You can download the project using git:
 ```bash
 git clone [https://github.com/bttisrael/item-predictions.git](https://github.com/bttisrael/item-predictions.git)
 cd item-predictions
-```bash
+```
 
-
-## Install the required packages using pip:
+Install the required packages using pip:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Usage & Sample Code
-The main execution is performed via the provided Jupyter Notebook. Below is a simplified snippet demonstrating the hybrid data ingestion (Cloud vs. Local) mechanism implemented in the pipeline:
 
+The main execution is performed via the provided Jupyter Notebook. Below is a simplified snippet demonstrating the **hybrid data ingestion** (Cloud vs. Local) mechanism implemented in the pipeline:
+
+```python
 import pandas as pd
 import duckdb
 
@@ -62,15 +64,16 @@ else:
     df = duckdb.query(query).df()
 
 print(df.head())
-```bash
+```
+
 ## Experiments and Diagnostics
-To reproduce the experiments and the business diagnostics, run the item_predictions.ipynb notebook. The evaluation yielded the following insights:
 
-General Performance: The model achieved a Mean Absolute Percentage Error (MAPE) of ~22% for standard retail stores using a log-transformed Random Forest Regressor.
+To reproduce the experiments and the business diagnostics, run the `item_predictions.ipynb` notebook. The evaluation yielded the following insights:
 
-Structural Break Detection: The error analysis identified a significant anomaly in Store 1 (Flagship Store) starting in Jan 2024. The empirical results suggest segregating outlier stores into a dedicated predictive cluster to maintain global model accuracy.
+* **General Performance:** The model achieved a Mean Absolute Percentage Error (MAPE) of **~22%** for standard retail stores using a log-transformed Random Forest Regressor.
+* **Structural Break Detection:** The error analysis identified a significant anomaly in Store 1 (Flagship Store) starting in Jan 2024. The empirical results suggest segregating outlier stores into a dedicated predictive cluster to maintain global model accuracy.
 
 ## Reference
-[1] Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.
 
-[2] Raasveldt, M., & Mühleisen, H. (2019). DuckDB: an Embeddable Analytical Database. Proceedings of the 2019 International Conference on Management of Data.
+[1] Breiman, L. (2001). Random Forests. *Machine Learning*, 45(1), 5-32.  
+[2] Raasveldt, M., & Mühleisen, H. (2019). DuckDB: an Embeddable Analytical Database. *Proceedings of the 2019 International Conference on Management of Data*.
