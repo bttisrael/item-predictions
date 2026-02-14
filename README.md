@@ -29,12 +29,12 @@ Clone and install from this repository. You can download the project using git:
 ```bash
 git clone [https://github.com/bttisrael/item-predictions.git](https://github.com/bttisrael/item-predictions.git)
 cd item-predictions
-
+```bash
 
 
 ## Install the required packages using pip:
 
-Bash
+```bash
 pip install -r requirements.txt
 
 ## Usage & Sample Code
@@ -62,7 +62,7 @@ else:
     df = duckdb.query(query).df()
 
 print(df.head())
-
+```bash
 ## Experiments and Diagnostics
 To reproduce the experiments and the business diagnostics, run the item_predictions.ipynb notebook. The evaluation yielded the following insights:
 
