@@ -76,9 +76,6 @@ To reproduce the experiments and the business diagnostics, run the `item_predict
 ## Reference
 
 [1] Hyndman, R.J., & Athanasopoulos, G. (2021). Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia.
-
 [2] Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.
-
 [3] Raasveldt, M., & Mühleisen, H. (2019). DuckDB: an Embeddable Analytical Database. Proceedings of the 2019 International Conference on Management of Data.
-
 [4] Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825-2830.
