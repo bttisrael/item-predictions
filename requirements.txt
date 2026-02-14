@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pandas-gbq
+google-cloud-bigquery
+gurobipy
+duckdb
